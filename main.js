@@ -5,9 +5,7 @@ const txt = ['tekst1', 'tekst2', 'tekst3']
 let text = 0;
 let letter = -10;
 
-// Implementacja
 const addLetter = () => {
-    // Użyj w środku setTimeout
     if (letter >= 0) {
         spnText.textContent += txt[text][letter];
     }
@@ -25,10 +23,9 @@ const addLetter = () => {
         
     setTimeout(addLetter, 100);
 }
-addLetter(); //pierwsze wywołanie
+addLetter();
 
 
-// Animacja kursora (zostaw bez zmian)
 const cursorAnimation = () => {
     spnCursor.classList.toggle('active');
 }
